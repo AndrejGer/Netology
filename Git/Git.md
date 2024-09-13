@@ -35,6 +35,8 @@
 
 5. Произведите первоначальную настройку Git, указав своё настоящее имя и email: `git config --global user.name` и `git config --global user.email johndoe@example.com`.
 
+`[](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/1.PNG)`
+
 6. Выполните команду `git status` и запомните результат.
 
 7. Отредактируйте файл README.md любым удобным способом, переведя файл в состояние Modified.
