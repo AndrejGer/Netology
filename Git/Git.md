@@ -26,23 +26,15 @@
 **Что нужно сделать:**
 
 1. Зарегистрируйте аккаунт на [GitHub](https://github.com/).
-
 2. Создайте публичный репозиторий. Обязательно поставьте галочку в поле «Initialize this repository with a README».
-
 3. Склонируйте репозиторий, используя https протокол `git clone ...`.
-
 4. Перейдите в каталог с клоном репозитория.
-
 5. Произведите первоначальную настройку Git, указав своё настоящее имя и email: `git config --global user.name` и `git config --global user.email johndoe@example.com`.
-
-![1](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/1.PNG)
-
 6. Выполните команду `git status` и запомните результат.
-
+![1](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/1.PNG)
 7. Отредактируйте файл README.md любым удобным способом, переведя файл в состояние Modified.
-
 8. Ещё раз выполните `git status` и продолжайте проверять вывод этой команды после каждого следующего шага.
-
+[](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/2.PNG)
 9. Посмотрите изменения в файле README.md, выполнив команды `git diff` и `git diff --staged`.
 
 10. Переведите файл в состояние staged или, как говорят, добавьте файл в коммит, командой `git add README.md`.
