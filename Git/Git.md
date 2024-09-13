@@ -34,7 +34,7 @@
 ![1](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/1.PNG)
 7. Отредактируйте файл README.md любым удобным способом, переведя файл в состояние Modified.
 8. Ещё раз выполните `git status` и продолжайте проверять вывод этой команды после каждого следующего шага.
-[](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/2.PNG)
+![image](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/2.PNG)
 9. Посмотрите изменения в файле README.md, выполнив команды `git diff` и `git diff --staged`.
 
 10. Переведите файл в состояние staged или, как говорят, добавьте файл в коммит, командой `git add README.md`.
