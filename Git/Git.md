@@ -36,38 +36,17 @@
 8. Ещё раз выполните `git status` и продолжайте проверять вывод этой команды после каждого следующего шага.
 ![image](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/2.PNG)
 9. Посмотрите изменения в файле README.md, выполнив команды `git diff` и `git diff --staged`.
-
+![3](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/3.PNG)
 10. Переведите файл в состояние staged или, как говорят, добавьте файл в коммит, командой `git add README.md`.
-
+![4](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/4.PNG)
 11. Ещё раз выполните команды `git diff` и `git diff --staged`.
-
+![5](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/5.PNG)
 12. Теперь можно сделать коммит `git commit -m 'First commit'`.
-
+![36](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/6.PNG)
 13. Сделайте ```git push origin master```.
-
+![3](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/7.PNG)
 В качестве ответа добавьте ссылку на этот коммит в ваш md-файл с решением.
-
-
-`Приведите ответ в свободной форме........`
-
-1. `weffffffffffffwcwcwc wefwefwefwefолнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
-```
-Поле для вставки кода...
-....
-....
-....
-....
-```
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
-
+![First commit](https://github.com/AndrejGer/my-git/commit/5d15078fc8cbecfb8401878cb7a90ad0908b2b57)
 
 ---
 
