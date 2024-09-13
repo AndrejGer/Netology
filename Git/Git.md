@@ -35,7 +35,7 @@
 
 5. Произведите первоначальную настройку Git, указав своё настоящее имя и email: `git config --global user.name` и `git config --global user.email johndoe@example.com`.
 
-`[](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/1.PNG)`
+`![1](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/1.PNG)`
 
 6. Выполните команду `git status` и запомните результат.
 
