@@ -29,15 +29,17 @@
 1. `Установите себе jenkins по инструкции из лекции или любым другим способом из официальной документации. Использовать Docker в этом задании нежелательно.`
 
 2. `Установите на машину с jenkins` [golang](https://golang.org/doc/install).
-
-![1](https://github.com/AndrejGer/Netology/blob/main/Git/img/git/1.PNG)
+![4](https://github.com/AndrejGer/Netology/blob/main/DevOps/img/v2/4.PNG)
 
 3. `Используя свой аккаунт на GitHub, сделайте себе форк` [репозитория](https://github.com/netology-code/sdvps-materials.git). В этом же репозитории находится [дополнительный материал для выполнения ДЗ](https://github.com/netology-code/sdvps-materials/blob/main/CICD/8.2-hw.md).
 
 4. `Создайте в jenkins Freestyle Project, подключите получившийся репозиторий к нему и произведите запуск тестов и сборку проекта ```go test .``` и  ```docker build .```.`
 
-В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
+![3](https://github.com/AndrejGer/Netology/blob/main/DevOps/img/v2/3.PNG)
 
+![1](https://github.com/AndrejGer/Netology/blob/main/DevOps/img/v2/1.PNG)
+
+![2](https://github.com/AndrejGer/Netology/blob/main/DevOps/img/v2/2.PNG)
 
 ---
 
@@ -49,7 +51,9 @@
 
 2. `Перепишите сборку из задания 1 на declarative в виде кода.`
 
-В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
+![5](https://github.com/AndrejGer/Netology/blob/main/DevOps/img/v2/5.PNG)
+
+![6](https://github.com/AndrejGer/Netology/blob/main/DevOps/img/v2/6.PNG)
 
 ---
 
@@ -63,7 +67,15 @@
 
 3. `Измените pipeline так, чтобы вместо Docker-образа собирался бинарный go-файл. Команду можно скопировать из Dockerfile.`
 
+![9](https://github.com/AndrejGer/Netology/blob/main/DevOps/img/v2/9.PNG)
+
+![7](https://github.com/AndrejGer/Netology/blob/main/DevOps/img/v2/7.PNG)
+
+![8](https://github.com/AndrejGer/Netology/blob/main/DevOps/img/v2/8.PNG)
+
 4. `Загрузите файл в репозиторий с помощью jenkins.`
+
+![10](https://github.com/AndrejGer/Netology/blob/main/DevOps/img/v2/10.PNG)
 
 В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
 
