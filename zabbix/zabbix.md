@@ -42,7 +42,7 @@
 2. Приложите в файл README.md текст использованных команд в GitHub.
 
 Конфигуратор команд с официального сайта Zabbix:
-![9](https://github.com/AndrejGer/Netology/blob/main/Gitlab/img/lab/9.PNG)
+![2](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab/2.PNG)
 
 
 Установка репозитория Zabbix:
@@ -86,8 +86,7 @@ systemctl restart zabbix-server zabbix-agent apache2
 systemctl enable zabbix-server zabbix-agent apache2
 ```
 
-![9](https://github.com/AndrejGer/Netology/blob/main/Gitlab/img/lab/9.PNG)
-
+![3](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab/3.PNG)
 
 
 
@@ -135,12 +134,15 @@ Server=127.0.0.1,51.250.78.142
 systemctl restart zabbix-agent
 ```
 
-![9](https://github.com/AndrejGer/Netology/blob/main/Gitlab/img/lab/9.PNG)
+![2](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab/1.PNG)
 
-![9](https://github.com/AndrejGer/Netology/blob/main/Gitlab/img/lab/9.PNG)
+![4](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab/4.PNG)
 
-![9](https://github.com/AndrejGer/Netology/blob/main/Gitlab/img/lab/9.PNG)
+![5](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab/5.PNG)
 
+![6](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab/6.PNG)
+
+![7](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab/7.PNG)
 
 
 ---
@@ -150,7 +152,6 @@ systemctl restart zabbix-agent
 #### Требования к результаты 
 1. Приложите в файл README.md скриншот раздела Latest Data, где видно свободное место на диске C:
 --- 
-
 ## Критерии оценки
 
 1. Выполнено минимум 2 обязательных задания
