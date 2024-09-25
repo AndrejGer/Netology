@@ -41,9 +41,9 @@
 #### Требования к результату
 - [ ] Прикрепите в файл README.md скриншот страницы шаблона с названием «Задание 1»
 
-![2](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab/2.PNG)
+![1](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab2/1.PNG)
 
-![2](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab/2.PNG)
+![2](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab2/2.PNG)
 
  ---
 
@@ -75,10 +75,9 @@
 #### Требования к результату
 - [ ] Прикрепите в файл README.md скриншот страницы хостов, где будут видны привязки шаблонов с названиями «Задание 2-3». Хосты должны иметь зелёный статус подключения
 
+![3](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab2/3.PNG)
 
-
-
-
+![5](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab2/5.PNG)
 
  ---
 
@@ -94,6 +93,7 @@
 - [ ] Прикрепите в файл README.md скриншот дашборда с названием «Задание 4»
 
 
+![4](https://github.com/AndrejGer/Netology/blob/main/zabbix/img/zab2/4.PNG)
 
  ---
 
