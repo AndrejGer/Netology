@@ -1,4 +1,4 @@
-# Домашнее задание к занятию 1 «Disaster recovery и Keepalived»
+# Домашнее задание к занятию 1 «Disaster recovery и Keepalived» `Герасимчук Андрей`
 
 ### Цель задания
 В результате выполнения этого задания вы научитесь:
@@ -42,6 +42,18 @@
 - Для проверки корректности настройки, разорвите один из кабелей между одним из маршрутизаторов и Switch0 и запустите ping между PC0 и Server0.
 - На проверку отправьте получившуюся схему в формате pkt и скриншот, где виден процесс настройки маршрутизатора.
 
+![1](https://github.com/AndrejGer/Netology/blob/main/keepalived/img/keepalived/1.PNG)
+
+![2](https://github.com/AndrejGer/Netology/blob/main/keepalived/img/keepalived/2.PNG)
+
+![3](https://github.com/AndrejGer/Netology/blob/main/keepalived/img/keepalived/4.PNG)
+
+![4](https://github.com/AndrejGer/Netology/blob/main/keepalived/img/keepalived/5.PNG)
+
+
+
+ [схема](https://drive.google.com/file/d/1gjmnPSh3_UEWmjiaGTnPAWVbiISW3Tyx/view?usp=sharing)
+
 ------
 
 
@@ -51,6 +63,25 @@
 - Напишите Bash-скрипт, который будет проверять доступность порта данного веб-сервера и существование файла index.html в root-директории данного веб-сервера.
 - Настройте Keepalived так, чтобы он запускал данный скрипт каждые 3 секунды и переносил виртуальный IP на другой сервер, если bash-скрипт завершался с кодом, отличным от нуля (то есть порт веб-сервера был недоступен или отсутствовал index.html). Используйте для этого секцию vrrp_script
 - На проверку отправьте получившейся bash-скрипт и конфигурационный файл keepalived, а также скриншот с демонстрацией переезда плавающего ip на другой сервер в случае недоступности порта или файла index.html
+
+
+![5](https://github.com/AndrejGer/Netology/blob/main/keepalived/img/keepalived/6.PNG)
+
+![6](https://github.com/AndrejGer/Netology/blob/main/keepalived/img/keepalived/7.PNG)
+
+
+Удаление файла index.html и перенос виртуального IP на другой сервер.
+
+![7](https://github.com/AndrejGer/Netology/blob/main/keepalived/img/keepalived/8.PNG)
+
+![8](https://github.com/AndrejGer/Netology/blob/main/keepalived/img/keepalived/9.PNG)
+
+![9](https://github.com/AndrejGer/Netology/blob/main/keepalived/img/keepalived/10.PNG)
+
+
+[script.sh](https://drive.google.com/file/d/1U7HKMj7e9v88sUdrSMogO88OJqvIR-Uf/view?usp=sharing)
+
+[keepalived.conf](https://drive.google.com/file/d/1DikWUcXxRs0JztnoGcd5C3jbdAgkHjtX/view?usp=sharing)
 
 
 ------
