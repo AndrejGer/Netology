@@ -1,4 +1,4 @@
-# Домашнее задание к занятию «ELK»
+# Домашнее задание к занятию «ELK» `Герасимчук Андрей`
 
 ### Инструкция по выполнению домашнего задания
 
@@ -38,6 +38,8 @@
 
 *Приведите скриншот команды 'curl -X GET 'localhost:9200/_cluster/health?pretty', сделанной на сервере с установленным Elasticsearch. Где будет виден нестандартный cluster_name*.
 
+![1](https://github.com/AndrejGer/Netology/blob/main/elk/img/1.png)
+
 ---
 
 ### Задание 2. Kibana
@@ -45,6 +47,8 @@
 Установите и запустите Kibana.
 
 *Приведите скриншот интерфейса Kibana на странице http://<ip вашего сервера>:5601/app/dev_tools#/console, где будет выполнен запрос GET /_cluster/health?pretty*.
+
+![2](https://github.com/AndrejGer/Netology/blob/main/elk/img/2.png)
 
 ---
 
@@ -54,6 +58,7 @@
 
 *Приведите скриншот интерфейса Kibana, на котором видны логи Nginx.*
 
+![3](https://github.com/AndrejGer/Netology/blob/main/elk/img/3.png)
 ---
 
 ### Задание 4. Filebeat. 
@@ -61,6 +66,12 @@
 Установите и запустите Filebeat. Переключите поставку логов Nginx с Logstash на Filebeat. 
 
 *Приведите скриншот интерфейса Kibana, на котором видны логи Nginx, которые были отправлены через Filebeat.*
+
+![4](https://github.com/AndrejGer/Netology/blob/main/elk/img/4.png)
+
+![5](https://github.com/AndrejGer/Netology/blob/main/elk/img/5.png.png)
+
+![6](https://github.com/AndrejGer/Netology/blob/main/elk/img/6.png)
 
 
 ## Дополнительные задания (со звёздочкой*)
