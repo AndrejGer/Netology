@@ -29,7 +29,7 @@ WHERE district NOT LIKE '% %' AND district LIKE 'K%a';
 
 ```
 
-![1](https://github.com/AndrejGer/Netology/blob/main/SQL/img/1/1.PNG)
+![1](https://github.com/AndrejGer/Netology/blob/main/SQL/image/1/1.PNG)
 
 ### Задание 2
 
@@ -47,7 +47,7 @@ SELECT * FROM payment
 WHERE payment_date BETWEEN '2005-06-15 00:00:00' AND '2005-06-18 23:59:59' AND amount > 10.00;
 ```
 
-![2](https://github.com/AndrejGer/Netology/blob/main/SQL/img/1/2.PNG)
+![2](https://github.com/AndrejGer/Netology/blob/main/SQL/image/1/2.PNG)
 
 
 ### Задание 3
@@ -59,7 +59,7 @@ SELECT * FROM rental
 ORDER BY rental_date DESC LIMIT 5;
 ```
 
-![3](https://github.com/AndrejGer/Netology/blob/main/SQL/img/1/3.PNG)
+![3](https://github.com/AndrejGer/Netology/blob/main/SQL/image/1/3.PNG)
 
 
 ### Задание 4
@@ -75,7 +75,7 @@ SELECT REPLACE(LOWER (first_name), 'll', 'pp') AS first_name, LOWER (last_name) 
 WHERE active = 1 AND (first_name = 'kelly' OR first_name = 'willie');
 ```
 
-![4](https://github.com/AndrejGer/Netology/blob/main/SQL/img/1/4.PNG)
+![4](https://github.com/AndrejGer/Netology/blob/main/SQL/image/1/4.PNG)
 
 
 ## Дополнительные задания (со звёздочкой*)
@@ -90,7 +90,7 @@ SELECT SUBSTRING_INDEX(email, '@', 1) AS "before@",
        SUBSTRING_INDEX(email, '@',-1) AS "@after" FROM customer;
 ```
 
-![5](https://github.com/AndrejGer/Netology/blob/main/SQL/img/1/5.PNG)
+![5](https://github.com/AndrejGer/Netology/blob/main/SQL/image/1/5.PNG)
 
 
 ### Задание 6*
@@ -103,4 +103,4 @@ SELECT CONCAT(UPPER(LEFT(SUBSTRING_INDEX(email, '@', 1), 1)), LOWER(SUBSTRING(SU
 FROM customer;
 ```
 
-![6](https://github.com/AndrejGer/Netology/blob/main/SQL/img/1/6.PNG)
+![6](https://github.com/AndrejGer/Netology/blob/main/SQL/image/1/6.PNG)
