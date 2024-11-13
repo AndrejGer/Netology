@@ -43,7 +43,7 @@ where date(p.payment_date) = '2005-07-30' and p.payment_date = r.rental_date and
 
 Explain analyze изначального запроса показал очень долгое время возврата всех строк (actual time=146e-6..172e-6), высокую стоимость исполнения запроса (cost=250e-6), а также избыточное колличество циклов (loops=642000)
 
-![2](https://github.com/AndrejGer/Netology/blob/main/SQL/image/3/2.PNG)
+![6](https://github.com/AndrejGer/Netology/blob/main/SQL/image/3/6.PNG)
 
 
 Для оптимизации запроса следует исключить избыточные таблицы film, rental, inventory.
@@ -60,6 +60,11 @@ where date(p.payment_date) = '2005-07-30'
 GROUP BY concat(c.last_name, ' ', c.first_name)
 
 ```
+
+С аналогичным выводом
+
+![7](https://github.com/AndrejGer/Netology/blob/main/SQL/image/3/7.PNG)
+
 
 С помощью оптимизации удалось добиться существенного сокращения времени вовзрата первой строки и всех строк (actual time=0.0422..0.046), 
 а также в несколько раз снизились показатели количества циклов запроса и ориентировочная стоимость исполнения запроса (cost=6.89, loops=599)
