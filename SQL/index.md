@@ -78,7 +78,7 @@ GROUP BY concat(c.last_name, ' ', c.first_name)
 CREATE INDEX payment_index ON payment(payment_date);
 ```
 
-![4](https://github.com/AndrejGer/Netology/blob/main/SQL/image/3/4.PNG)
+![8](https://github.com/AndrejGer/Netology/blob/main/SQL/image/3/8.PNG)
 
 
 Получаем еще небольшой прирост в производительности:
