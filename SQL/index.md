@@ -86,6 +86,38 @@ CREATE INDEX payment_index ON payment(payment_date);
 ![5](https://github.com/AndrejGer/Netology/blob/main/SQL/image/3/5.PNG)
 
 
+### Доработка
+
+Переписал условие where для payment_date, чтобы индекс работал правильно и время отклика сократилось:
+
+```sql
+EXPLAIN ANALYZE
+select concat(c.last_name, ' ', c.first_name), sum(p.amount)
+from customer c
+JOIN payment p ON c.customer_id = p.customer_id
+where payment_date >= '2005-07-30' and payment_date < DATE_ADD('2005-07-30', INTERVAL 1 DAY)
+GROUP BY concat(c.last_name, ' ', c.first_name)
+```
+![9](https://github.com/AndrejGer/Netology/blob/main/SQL/image/3/9.PNG)
+
+
+
+После добавления воторого JOIN удалось еще немного снизить актуальное время и стоимость запроса:
+
+```sql
+EXPLAIN ANALYZE
+select concat(c.last_name, ' ', c.first_name), sum(p.amount)
+from customer c
+JOIN payment p ON c.customer_id = p.customer_id
+JOIN rental r ON r.rental_id = p.rental_id
+where payment_date >= '2005-07-30' and payment_date < DATE_ADD('2005-07-30', INTERVAL 1 DAY) and p.payment_date = r.rental_date
+GROUP BY concat(c.last_name, ' ', c.first_name)
+```
+
+![10](https://github.com/AndrejGer/Netology/blob/main/SQL/image/3/10.PNG)
+
+
+
 
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
