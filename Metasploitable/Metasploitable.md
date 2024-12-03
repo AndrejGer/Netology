@@ -50,15 +50,15 @@
 Разрешенные сетевые службы и обнаруженные уязвимости:  
 
 21/tcp   open  ftp         vsftpd 2.3.4  
-`vsftpd 2.3.4 - Backdoor Command Execution https://www.exploit-db.com/exploits/49757`
+`vsftpd 2.3.4 - Backdoor Command Execution` https://www.exploit-db.com/exploits/49757
 
 22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)  
 23/tcp   open  telnet      Linux telnetd  
 25/tcp   open  smtp        Postfix smtpd  
-`Postfix SMTP 4.2.x < 4.2.48 - 'Shellshock' Remote Command Injection https://www.exploit-db.com/exploits/34896`
+`Postfix SMTP 4.2.x < 4.2.48 - 'Shellshock' Remote Command Injection` https://www.exploit-db.com/exploits/34896
 
 53/tcp   open  domain      ISC BIND 9.4.2  
-`ISC BIND 9 - Denial of Service https://www.exploit-db.com/exploits/40453`
+`ISC BIND 9 - Denial of Service` https://www.exploit-db.com/exploits/40453
 
 80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2)  
 111/tcp  open  rpcbind     2 (RPC #100000)  
