@@ -47,37 +47,37 @@
 ![2](https://github.com/AndrejGer/Netology/blob/main/Metasploitable/13-01/2.PNG)
 
 
-Разрешенные сетевые службы и обнаруженные уязвимости:
+Разрешенные сетевые службы и обнаруженные уязвимости:  
 
-21/tcp   open  ftp         vsftpd 2.3.4
+21/tcp   open  ftp         vsftpd 2.3.4  
 `vsftpd 2.3.4 - Backdoor Command Execution https://www.exploit-db.com/exploits/49757`
 
-22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
-23/tcp   open  telnet      Linux telnetd
-25/tcp   open  smtp        Postfix smtpd
+22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)  
+23/tcp   open  telnet      Linux telnetd  
+25/tcp   open  smtp        Postfix smtpd  
 `Postfix SMTP 4.2.x < 4.2.48 - 'Shellshock' Remote Command Injection https://www.exploit-db.com/exploits/34896`
 
-53/tcp   open  domain      ISC BIND 9.4.2
+53/tcp   open  domain      ISC BIND 9.4.2  
 `ISC BIND 9 - Denial of Service https://www.exploit-db.com/exploits/40453`
 
-80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2)
-111/tcp  open  rpcbind     2 (RPC #100000)
-139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-512/tcp  open  exec        netkit-rsh rexecd
-513/tcp  open  login
-514/tcp  open  tcpwrapped
-1099/tcp open  java-rmi    GNU Classpath grmiregistry
-1524/tcp open  bindshell   Metasploitable root shell
-2049/tcp open  nfs         2-4 (RPC #100003)
-2121/tcp open  ftp         ProFTPD 1.3.1
-3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
-5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7
-5900/tcp open  vnc         VNC (protocol 3.3)
-6000/tcp open  X11         (access denied)
-6667/tcp open  irc         UnrealIRCd
-8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
-8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
+80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2)  
+111/tcp  open  rpcbind     2 (RPC #100000)  
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)  
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)  
+512/tcp  open  exec        netkit-rsh rexecd  
+513/tcp  open  login  
+514/tcp  open  tcpwrapped  
+1099/tcp open  java-rmi    GNU Classpath grmiregistry  
+1524/tcp open  bindshell   Metasploitable root shell  
+2049/tcp open  nfs         2-4 (RPC #100003)  
+2121/tcp open  ftp         ProFTPD 1.3.1  
+3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5  
+5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7  
+5900/tcp open  vnc         VNC (protocol 3.3)  
+6000/tcp open  X11         (access denied)  
+6667/tcp open  irc         UnrealIRCd  
+8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)  
+8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1  
 
 
 ### Задание 2
@@ -96,10 +96,10 @@
 **Тип сканирования -sS**
 `nmap -sS 192.168.0.111` 
 
-Хосту отправляется [SYN] пакет.
-Если удалённый хост отвечает пакетом с флагом [RST, ACK] значит порт закрыт.
-Если удалённый хост отвечает пакетом с флагом [SYN, ACK], значит порт открыт и готов установить соединение (прослушивается).
-Для обрыва начатого рукопожатия отправляется пакет [RST].
+Хосту отправляется [SYN] пакет.  
+Если удалённый хост отвечает пакетом с флагом [RST, ACK] значит порт закрыт.  
+Если удалённый хост отвечает пакетом с флагом [SYN, ACK], значит порт открыт и готов установить соединение (прослушивается).  
+Для обрыва начатого рукопожатия отправляется пакет [RST].  
 
 ![4](https://github.com/AndrejGer/Netology/blob/main/Metasploitable/13-01/4.PNG)
 
@@ -109,27 +109,27 @@
 **Тип сканирования -sF и -sX**
 Ключевой особенностью является их способность незаметно обойти некоторые не учитывающие состояние (non-stateful) брандмауэры и роутеры с функцией пакетной фильтрации. Еще одним преимуществом является то, что они даже чуть более незаметны, чем SYN сканирование. Все же не надо на это полагаться - большинство современных IDS могут быть сконфигурированы на их обнаружение.
 
-Эти типы сканирования работают по одной схеме, различия только в TCP флагах установленных в пакетах запросов.
-Если в ответ приходит RST пакет, то порт считается закрытым.
-Отсутствие ответа означает, что порт открыт.
-Порт помечается как фильтруется, если в ответ приходит ICMP ошибка о недостижимости
+Эти типы сканирования работают по одной схеме, различия только в TCP флагах установленных в пакетах запросов.  
+Если в ответ приходит RST пакет, то порт считается закрытым.  
+Отсутствие ответа означает, что порт открыт.  
+Порт помечается как фильтруется, если в ответ приходит ICMP ошибка о недостижимости  
 
-`nmap -sF 192.168.0.111`  
+`nmap -sF 192.168.0.111`    
 Устанавливается только TCP FIN бит.
 
 ![5](https://github.com/AndrejGer/Netology/blob/main/Metasploitable/13-01/5.PNG)
 
 
-`nmap -sX 192.168.0.111` 
+`nmap -sX 192.168.0.111`  
 Устанавливаются FIN, PSH и URG флаги.
 
 ![6](https://github.com/AndrejGer/Netology/blob/main/Metasploitable/13-01/6.PNG)
 
 
-**Тип сканирования -sU**
+**Тип сканирования -sU**  
 `nmap -sU 192.168.0.111` 
 
-UDP сканирование работает путем посылки пустого (без данных) UDP заголовка на каждый целевой порт. Если в ответ приходит ICMP ошибка (тип 3, код 3), значит порт недоступен **(Port unreachable)**. Другие ICMP ошибки недостижимости (тип 3, коды 1, 2, 9, 10 или 13) указывают на то, что порт фильтруется. Иногда, служба будет отвечать UDP пакетом, указывая на то, что порт открыт. Если после нескольких попыток не было получено никакого ответа, то порт классифицируется как открыт|фильтруется. Это означает, что порт может быть открыт, или, возможно, пакетный фильтр блокирует его.
+UDP сканирование работает путем посылки пустого (без данных) UDP заголовка на каждый целевой порт. Если в ответ приходит ICMP ошибка (тип 3, код 3), значит порт недоступен **(Port unreachable)**. Другие ICMP ошибки недостижимости (тип 3, коды 1, 2, 9, 10 или 13) указывают на то, что порт фильтруется. Иногда, служба будет отвечать UDP пакетом, указывая на то, что порт открыт. Если после нескольких попыток не было получено никакого ответа, то порт классифицируется как открыт|фильтруется. Это означает, что порт может быть открыт, или, возможно, пакетный фильтр блокирует его.  
 Большой проблемой при UDP сканировании является его медленная скорость работы. Открытые и фильтруемые порты редко посылают какие-либо ответы, заставляя Nmap отправлять повторные запросы, на случай если пакеты были утеряны.
 
 ![7](https://github.com/AndrejGer/Netology/blob/main/Metasploitable/13-01/7.PNG)
