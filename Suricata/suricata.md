@@ -48,7 +48,7 @@
 
 ![2](https://github.com/AndrejGer/Netology/blob/main/Suricata/suricata2/sT.PNG)
 
-![3](https://github.com/AndrejGer/Netology/blob/main/Suricata/suricata2/sA-log.PNG)
+![3](https://github.com/AndrejGer/Netology/blob/main/Suricata/suricata2/sT-log.PNG)
 
 
 **sudo nmap -sS 192.168.0.160**
@@ -111,7 +111,7 @@ Classification:
 
 *В качестве ответа пришлите события, которые попали в логи Suricata и Fail2Ban, прокомментируйте результат.*
 
-создание файлов: **users.txt** и **pass.txt**;
+создание файлов: **user.txt** и **pass.txt**;
 
 ![9](https://github.com/AndrejGer/Netology/blob/main/Suricata/suricata2/user_pass.PNG)
 
@@ -139,6 +139,6 @@ Classification:
 ![17](https://github.com/AndrejGer/Netology/blob/main/Suricata/suricata2/hydra_on4.PNG)
 
 Подбор логинов и паролей, результат работы hydra выдал ошибку connection refused.  
-В /var/log/fail2ban.log появились записи о нелегитимных попытках подбора логина и пароля с адреса 192.168.0.157 и последующей блокировке. 
+В /var/log/fail2ban.log появились записи о нелегитимных попытках подбора логина и пароля с адреса 192.168.0.157 и последующей блокировке.  
 В логе файла /var/log/auth.log видна операция подбора пароля.  
-/var/log/suricata/fast.log показывает сканирование ssh.
+/var/log/suricata/fast.log показывает ET SCAN Potential SSH Scan OUTBOUND, сработавшее правило может быть признаком сканирования, попытки подбора паролей, либо признаком ошибки соединения.
